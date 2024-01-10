@@ -1,3 +1,6 @@
+using LeaveManagement.Web.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace LeaveManagement.Web
 {
     public class Program
@@ -6,8 +9,18 @@ namespace LeaveManagement.Web
         {
             var builder = WebApplication.CreateBuilder(args);
 
+
             // Add services to the container.
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            builder.Services.AddDbContext<LeaveManagementDbContext>(options =>
+                options.UseSqlServer(connectionString));
+            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+            builder.Services.AddDefaultIdentity<Employee>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<LeaveManagementDbContext>();
             builder.Services.AddControllersWithViews();
+
+
 
             var app = builder.Build();
 
