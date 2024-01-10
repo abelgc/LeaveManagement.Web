@@ -1,3 +1,4 @@
+using LeaveManagement.Web.Configutations;
 using LeaveManagement.Web.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,7 +21,7 @@ namespace LeaveManagement.Web
                 .AddEntityFrameworkStores<LeaveManagementDbContext>();
             builder.Services.AddControllersWithViews();
 
-
+            builder.Services.AddAutoMapper(typeof(MappingConfiguration));
 
             var app = builder.Build();
 

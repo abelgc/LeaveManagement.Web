@@ -247,3 +247,5 @@ C:\Dev\LeaveManagement.Web\LeaveManagementNet7\LeaveManagement.Web\obj\Debug\net
 C:\Dev\LeaveManagement.Web\LeaveManagementNet7\LeaveManagement.Web\obj\Debug\net7.0\LeaveManagement.Web.pdb
 C:\Dev\LeaveManagement.Web\LeaveManagementNet7\LeaveManagement.Web\obj\Debug\net7.0\LeaveManagement.Web.genruntimeconfig.cache
 C:\Dev\LeaveManagement.Web\LeaveManagementNet7\LeaveManagement.Web\obj\Debug\net7.0\ref\LeaveManagement.Web.dll
+C:\Dev\LeaveManagement.Web\LeaveManagementNet7\LeaveManagement.Web\bin\Debug\net7.0\AutoMapper.dll
+C:\Dev\LeaveManagement.Web\LeaveManagementNet7\LeaveManagement.Web\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
