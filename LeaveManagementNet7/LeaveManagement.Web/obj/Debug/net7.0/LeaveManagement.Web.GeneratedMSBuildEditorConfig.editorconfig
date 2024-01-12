@@ -30,6 +30,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVUeXBlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Dev/LeaveManagement.Web/LeaveManagementNet7/LeaveManagement.Web/Views/LeaveTypes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVUeXBlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Dev/LeaveManagement.Web/LeaveManagementNet7/LeaveManagement.Web/Views/LeaveTypes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVUeXBlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

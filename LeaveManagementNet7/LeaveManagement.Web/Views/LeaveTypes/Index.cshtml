@@ -34,7 +34,7 @@
                 <button data-id="@item.Id" class="btn btn-primary allocateBtn" type="button"> Allocate Leave </button>
                     <a class="btn btn-warning m-1" asp-action="Edit" asp-route-id="@item.Id"><i class="fas fa-pencil-alt"></i> Edit</a>
                     <a class="btn btn-info m-1" asp-action="Details" asp-route-id="@item.Id"> <i class="fas fa-info-circle"></i>Details</a>
-                <button data-id="@item.Id" class="btn btn-danger deleteBtn m-1" type="button"> <i class="far fa-trash-alt"></i>Delete</button>
+                <button data-id="@item.Id" class="btn btn-danger deleteBtnAlert m-1" type="button"> <i class="far fa-trash-alt"></i>Delete</button>
             </td>
         </tr>
 }
@@ -53,7 +53,7 @@
     <script>
         $(function(){
 
-            $('.deleteBtn').click(function(e) {
+            $('.deleteBtnAlert').click(function (e) {
                 swal({
                     title: "Are you sure?",
                     text: "Are you sure you want to delete this record?",
