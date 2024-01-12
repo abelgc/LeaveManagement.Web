@@ -32,9 +32,9 @@
             </td>
             <td>
                 <button data-id="@item.Id" class="btn btn-primary allocateBtn" type="button"> Allocate Leave </button>
-                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id"><i class="fas fa-pencil-alt"></i></a> 
-                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"> <i class="fas fa-info-circle"></i></a> 
-                <button data-id="@item.Id" class="btn btn-danger deleteBtn" type="button"> <i class="far fa-trash-alt"></i></button>
+                    <a class="btn btn-warning m-1" asp-action="Edit" asp-route-id="@item.Id"><i class="fas fa-pencil-alt"></i> Edit</a>
+                    <a class="btn btn-info m-1" asp-action="Details" asp-route-id="@item.Id"> <i class="fas fa-info-circle"></i>Details</a>
+                <button data-id="@item.Id" class="btn btn-danger deleteBtn m-1" type="button"> <i class="far fa-trash-alt"></i>Delete</button>
             </td>
         </tr>
 }
