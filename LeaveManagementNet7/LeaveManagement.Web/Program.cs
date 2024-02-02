@@ -1,5 +1,6 @@
 using LeaveManagement.Web.Configutations;
 using LeaveManagement.Web.Data;
+using LeaveManagement.Web.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace LeaveManagement.Web
@@ -19,9 +20,18 @@ namespace LeaveManagement.Web
 
             builder.Services.AddDefaultIdentity<Employee>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<LeaveManagementDbContext>();
-            builder.Services.AddControllersWithViews();
+
+            // investigate that one. Not sure
+            // here we register the generic
+            builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            // everyone can relau on ILeaveTypeRepository and this contract is honored by LeaveTypeRepository file
+            builder.Services.AddScoped<ILeaveTypeRepository, LeaveTypeRepository>();
 
             builder.Services.AddAutoMapper(typeof(MappingConfiguration));
+
+            builder.Services.AddControllersWithViews();
+
+
 
             var app = builder.Build();
 
